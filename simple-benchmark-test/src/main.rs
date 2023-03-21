@@ -32,8 +32,13 @@ fn largest_prime_below(max_value: u64) -> Option<u64> {
 
 fn main() {
     let sleep_interval: u64 = 1;
+    // let prime_limit: u64 = 387654321;
+    let prime_limit: u64 = 38765432;
     println!("Hello, world!");
-    let mut largest_prime = largest_prime_below(387654321);
+    let largest_prime = largest_prime_below(prime_limit);
     sleeper(sleep_interval);
-    println!("Fibonacci final value : {:?}", largest_prime);
+    println!(
+        "largest prime below {} final value : {:?}",
+        prime_limit, largest_prime
+    );
 }
